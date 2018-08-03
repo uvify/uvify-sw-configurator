@@ -1,0 +1,398 @@
+<div class="tab-arm-led toolbar_fixed_bottom">
+    <div class="content_wrapper">
+        <div class="tab_title" i18n="tabArmLED"></div>
+		<div class="leftWrapper" style="margin-bottom: 20px;">
+			<div class="note spacerbottom">
+				<div class="note_spacer">
+					<p class="led_help" i18n="ledHelp"></p>
+				</div>
+			</div>
+			<div class="warning">
+				<dialog class="prop-remove">
+					<h3 i18n="ledPropWarning"></h3>
+					<div i18n="ledPropWarningText1"></div>
+					<div i18n="ledPropWarningText2"></div>
+					<div i18n="ledPropWarningText3"></div>
+					<div class="buttons">
+						<a href="#" class="prop-remove-confirm regular-button" i18n="ledPropWarningConfirm"></a>
+						<a href="#" class="prop-remove-cancel regular-button" i18n="dataflashButtonEraseCancel"></a> 					
+					</div>
+				</dialog>			
+			</div>
+			<dialog class="data-processing">
+				<h3 i18n="ledReadingDataNote"></h3>
+				<div class="data-loading">
+					<p class="data-processing-text" i18n="ledReadingDataNote"></p>
+				</div>
+			</dialog>			
+			<div class="overlay_colors">
+				<div class="img_background">
+					<img class="preview_img" src="../images/led.png" />
+					<div class="light-display lights1"></div>
+					<div class="light-display lights2"></div>
+					<div class="light-display lights3"></div>
+					<div class="light-display lights4"></div>
+					<div class="light-display lights5"></div>
+					<div class="light-display lights6"></div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="rightWrapper">
+			<div class="spacer_box">
+				<div class="leftWrapper">
+					<div class="gui_box grey">
+						<div class="gui_box_titlebar ledESC1">
+							<div class="spacer_box_title" i18n="ledESC1"></div>
+						</div>
+						<div class="spacer_box">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+								<tbody>
+									<tr>
+										<td i18n="escSetupLEDRed"></td>
+										<td><input type="checkbox" id="esc-red-0" class="toggle" /></td>
+									</tr>
+									<tr>
+										<td i18n="escSetupLEDGreen"></td>
+										<td><input type="checkbox" id="esc-green-0" class="toggle" /></td>
+									</tr>
+									<tr class="noboarder">
+										<td i18n="escSetupLEDBlue"></td>
+										<td><input type="checkbox" id="esc-blue-0" class="toggle" /></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="gui_box grey">
+						<div class="gui_box_titlebar ledESC2">
+							<div class="spacer_box_title" i18n="ledESC2"></div>
+						</div>
+						<div class="spacer_box">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+								<tbody>
+									<tr>
+										<td i18n="escSetupLEDRed"></td>
+										<td><input type="checkbox" id="esc-red-1" class="toggle" /></td>
+									</tr>
+									<tr>
+										<td i18n="escSetupLEDGreen"></td>
+										<td><input type="checkbox" id="esc-green-1" class="toggle" /></td>
+									</tr>
+									<tr class="noboarder">
+										<td i18n="escSetupLEDBlue"></td>
+										<td><input type="checkbox" id="esc-blue-1" class="toggle" /></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>				
+				</div>
+				<div class="rightWrapper">
+					<div class="gui_box grey">
+						<div class="gui_box_titlebar ledESC6">
+							<div class="spacer_box_title" i18n="ledESC6"></div>
+						</div>
+						<div class="spacer_box">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+								<tbody>
+									<tr>
+										<td i18n="ledWarning"></td>
+										<td><input type="checkbox" id="esc-warning-6" class="toggle" /></td>
+									</tr>
+									<tr>
+										<td>
+											<span i18n="ledFunction"></span>										
+										</td>
+										<td>
+											<label class="led-function">
+												<select class="led-function-select-6">
+													<option value="0" i18n="ledFunctionColor"/>
+													<option value="1" i18n="ledFunctionArmState"/>
+												</select>
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+										<div class="colors2">
+											<button class="color-6-0" title="black">0</button>
+											<button class="color-6-1" title="white">1</button>
+											<button class="color-6-2" title="red">2</button>
+											<button class="color-6-3" title="orange">3</button>
+											<button class="color-6-4" title="yellow">4</button>
+											<button class="color-6-5" title="lime green">5</button>
+											<button class="color-6-6" title="green">6</button>
+											<button class="color-6-7" title="mint green">7</button>
+											<button class="color-6-8" title="cyan">8</button>
+											<button class="color-6-9" title="light blue">9</button>
+											<button class="color-6-10" title="blue">10</button>
+											<button class="color-6-11" title="dark violet">11</button>
+											<button class="color-6-12" title="magenta">12</button>
+											<button class="color-6-13" title="deep pink">13</button>
+											<button class="color-6-14" title="black">14</button>
+											<button class="color-6-15" title="black">15</button>
+										</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr class="noboarder">
+										<td>
+										<div class="special_colors mode_colors2">
+											<button class="mode_color-6-6-0" title="green">Disarmed</button>
+											<button class="mode_color-6-6-1" title="blue">Armed</button>
+										</div>
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>					
+				
+				
+				</div>
+				<div class="clear-both"></div>
+				<div class="leftWrapper">
+					<div class="gui_box grey">
+						<div class="gui_box_titlebar ledESC3">
+							<div class="spacer_box_title" i18n="ledESC3"></div>
+						</div>
+						<div class="spacer_box">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+								<tbody>
+									<tr>
+										<td i18n="escSetupLEDRed"></td>
+										<td><input type="checkbox" id="esc-red-2" class="toggle" /></td>
+									</tr>
+									<tr>
+										<td i18n="escSetupLEDGreen"></td>
+										<td><input type="checkbox" id="esc-green-2" class="toggle" /></td>
+									</tr>
+									<tr class="noboarder">
+										<td i18n="escSetupLEDBlue"></td>
+										<td><input type="checkbox" id="esc-blue-2" class="toggle" /></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="gui_box grey">
+						<div class="gui_box_titlebar ledESC4">
+							<div class="spacer_box_title" i18n="ledESC4"></div>
+						</div>
+						<div class="spacer_box">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+								<tbody>
+									<tr>
+										<td i18n="escSetupLEDRed"></td>
+										<div class="select esc-red-3">
+										<td><input type="checkbox" id="esc-red-3" class="toggle" /></td>
+										</div>
+									</tr>
+									<tr>
+										<td i18n="escSetupLEDGreen"></td>
+										<div class="select esc-green-3">
+										<td><input type="checkbox" id="esc-green-3" class="toggle" /></td>
+										</div>
+									</tr>
+									<tr class="noboarder">
+										<td i18n="escSetupLEDBlue"></td>
+										<div class="select esc-blue-3">
+										<td><input type="checkbox" id="esc-blue-3" class="toggle" /></td>
+										</div>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>				
+				</div>
+				<div class="rightWrapper">
+					<div class="gui_box grey">
+						<div class="gui_box_titlebar ledESC5">
+							<div class="spacer_box_title" i18n="ledESC5"></div>
+						</div>
+						<div class="spacer_box">
+							<table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+								<tbody>
+									<tr>
+										<td i18n="ledWarning"></td>
+										<td><input type="checkbox" id="esc-warning-5" class="toggle" /></td>
+									</tr>
+									<tr>
+										<td>
+											<span i18n="ledFunction"></span>										
+										</td>
+										<td>
+											<label class="led-function">
+												<select class="led-function-select-5">
+													<option value="0" i18n="ledFunctionColor"/>
+													<option value="1" i18n="ledFunctionArmState"/>
+												</select>
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+										<div class="colors1">
+											<button class="color-5-0" title="black">0</button>
+											<button class="color-5-1" title="white">1</button>
+											<button class="color-5-2" title="red">2</button>
+											<button class="color-5-3" title="orange">3</button>
+											<button class="color-5-4" title="yellow">4</button>
+											<button class="color-5-5" title="lime green">5</button>
+											<button class="color-5-6" title="green">6</button>
+											<button class="color-5-7" title="mint green">7</button>
+											<button class="color-5-8" title="cyan">8</button>
+											<button class="color-5-9" title="light blue">9</button>
+											<button class="color-5-10" title="blue">10</button>
+											<button class="color-5-11" title="dark violet">11</button>
+											<button class="color-5-12" title="magenta">12</button>
+											<button class="color-5-13" title="deep pink">13</button>
+											<button class="color-5-14" title="black">14</button>
+											<button class="color-5-15" title="black">15</button>
+										</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr class="noboarder">
+										<td>
+										<div class="special_colors mode_colors1">
+											<button class="mode_color-5-6-0" title="green">Disarmed</button>
+											<button class="mode_color-5-6-1" title="blue">Armed</button>
+										</div>
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>					
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+        <div class="cf_column fourth" id="ESC-0">
+            <div class="spacer_left">
+                <div class="gui_box grey">
+                    <div class="gui_box_titlebar">
+                        <div class="spacer_box_title">ESC 0</div>
+                    </div>
+                    <div class="spacer_box">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+                            <tbody>
+                                <tr>
+                                    <td i18n="escSetupLEDRed">Red</td>
+                                    <td><input type="checkbox" id="esc-red-0" class="toggle" /></td>
+                                </tr>
+                                <tr>
+                                    <td i18n="escSetupLEDGreen">Green</td>
+                                    <td><input type="checkbox" id="esc-green-0" class="toggle" /></td>
+                                </tr>
+                                <tr class="noboarder">
+                                    <td i18n="escSetupLEDBlue">Blue</td>
+                                    <td><input type="checkbox" id="esc-blue-0" class="toggle" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="cf_column fourth" id="ESC-1">
+            <div class="spacer_left">
+                <div class="gui_box grey">
+                    <div class="gui_box_titlebar">
+                        <div class="spacer_box_title">ESC 1</div>
+                    </div>
+                    <div class="spacer_box">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+                            <tbody>
+                                <tr>
+                                    <td i18n="escSetupLEDRed">Red</td>
+                                    <td><input type="checkbox" id="esc-red-1" class="toggle" /></td>
+                                </tr>
+                                <tr>
+                                    <td i18n="escSetupLEDGreen">Green</td>
+                                    <td><input type="checkbox" id="esc-green-1" class="toggle" /></td>
+                                </tr>
+                                <tr class="noboarder">
+                                    <td i18n="escSetupLEDBlue">Blue</td>
+                                    <td><input type="checkbox" id="esc-blue-1" class="toggle" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="cf_column fourth" id="ESC-2">
+            <div class="spacer_left">
+                <div class="gui_box grey">
+                    <div class="gui_box_titlebar">
+                        <div class="spacer_box_title">ESC 2</div>
+                    </div>
+                    <div class="spacer_box">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+                            <tbody>
+                                <tr>
+                                    <td i18n="escSetupLEDRed">Red</td>
+                                    <td><input type="checkbox" id="esc-red-2" class="toggle" /></td>
+                                </tr>
+                                <tr>
+                                    <td i18n="escSetupLEDGreen">Green</td>
+                                    <td><input type="checkbox" id="esc-green-2" class="toggle" /></td>
+                                </tr>
+                                <tr class="noboarder">
+                                    <td i18n="escSetupLEDBlue">Blue</td>
+                                    <td><input type="checkbox" id="esc-blue-2" class="toggle" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="cf_column fourth" id="ESC-3">
+            <div class="spacer_left">
+                <div class="gui_box grey">
+                    <div class="gui_box_titlebar">
+                        <div class="spacer_box_title">ESC 3</div>
+                    </div>
+                    <div class="spacer_box">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="cf_table">
+                            <tbody>
+                                <tr>
+                                    <td i18n="escSetupLEDRed">Red</td>
+									<div class="select esc-red-3">
+                                    <td><input type="checkbox" id="esc-red-3" class="toggle" /></td>
+									</div>
+                                </tr>
+                                <tr>
+                                    <td i18n="escSetupLEDGreen">Green</td>
+									<div class="select esc-green-3">
+                                    <td><input type="checkbox" id="esc-green-3" class="toggle" /></td>
+									</div>
+                                </tr>
+                                <tr class="noboarder">
+                                    <td i18n="escSetupLEDBlue">Blue</td>
+									<div class="select esc-blue-3">
+                                    <td><input type="checkbox" id="esc-blue-3" class="toggle" /></td>
+									</div>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+		-->
+	</div>
+    <div class="content_toolbar">
+        <div class="btn save_btn">
+            <a class="save" href="#" i18n="armLedButtonSave"></a>
+        </div>
+    </div>	
+</div>

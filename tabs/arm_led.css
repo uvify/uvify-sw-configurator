@@ -1,0 +1,626 @@
+.tab-arm-led {
+    position: relative;
+}
+.tab-arm-led .led-function select {
+    border: 1px solid silver;
+    width: 100px;
+}
+.tab-arm-led .content_wrapper {
+    position: relative !important;
+}
+.tab-arm-led .leftWrapper {
+    float: left;
+    width: calc(50% - 20px);
+}
+
+.tab-arm-led .rightWrapper {
+    float: left;
+    width: calc(50% - 0px);
+    margin: 0 0 10px 20px;
+}
+
+.tab-arm-led .preview_img {
+	height: 100%;
+	width: 100%;
+	max-height: 562px;
+	position: relative;
+	z-index: 3;
+}
+.tab-arm-led .img_background {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	z-index: 1;
+}
+
+.tab-arm-led .overlay_colors {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.tab-arm-led .light-display {
+	height: 80px;
+	width: 200px;
+	background-size: contain;
+	position: absolute;
+	z-index: 2;
+	transform: translate(-50%,-50%);
+}
+
+.tab-arm-led .lights1 {
+	transform: translate(-50%,-50%) rotate(20deg);
+}
+.tab-arm-led .lights2 {
+	transform: translate(-50%,-50%) rotate(-20deg);
+}
+.tab-arm-led .lights3 {
+	transform: translate(-50%,-50%) rotate(-20deg);
+}
+.tab-arm-led .lights4 {
+	transform: translate(-50%,-50%) rotate(20deg);
+}
+.tab-arm-led .lights-5 {
+	width: 30%;
+	height: 100%;
+	max-width: 30%;
+	background-image: url(../images/light.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+}
+.tab-arm-led .lights-6 {
+	width: 30%;
+	height: 100%;
+	max-width: 30%;
+	background-image: url(../images/light.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 2;
+}
+.tab-arm-led .help {
+    padding: 10px;
+    background-color: #ffcb18;
+    margin-bottom: 10px;
+}
+
+.tab-arm-led .save_btn a {
+    line-height: 28px;
+}
+
+.tab-arm-led .section {
+    color: #565656;
+    margin: 20px 0 5px 0;
+    border-bottom: 1px solid silver;
+}
+/*
+.tab-arm-led .gui_box_titlebar .available {
+    background-color: #bf29ff;
+    border-radius: 3px 3px 0px 0px;
+    font-size: 13px;
+    width: 100%;
+    height: 27px;
+    padding-bottom: 0px;
+    float: left;
+    margin-bottom: 7px;
+    font-family: 'open_sanssemibold', Arial;
+}
+*/
+.tab-arm-led .mainGrid {
+    width: calc((24px + 7px) * 16);
+    height: calc((24px + 7px) * 16);
+    float: left;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: #dcdcdc;
+    border: silver;
+}
+
+.tab-arm-led .mainGrid .gPoint {
+    float: left;
+    border: solid 1px #ADADAD;
+    width: 23px;
+    height: 23px;
+    margin: 3px;
+    border-radius: 7px;
+    background: #e9e9e9;
+    cursor: pointer;
+}
+
+.tab-arm-led .gPoint.function-s { /* RSSI */
+    background: brown;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, .7);
+    border-color: rgb(52, 155, 255);
+}
+
+.tab-arm-led .gPoint.function-c { /* Color */
+    background: linear-gradient( to bottom right, rgba(255, 0, 0, .5) 0%, rgba(255, 255, 0, 0.5) 15%, rgba(0, 255, 0, .5) 30%, rgba(0, 255, 255, .5) 50%, rgba(0, 0, 255, .5) 65%, rgba(255, 0, 255, .5) 80%, rgba(255, 0, 0, .5) 100%);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, .7);
+    border-color: grey;
+}
+
+.tab-arm-led .gPoint.function-f { /* Flight mode & orientation */
+    background: rgb(50, 205, 50);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, .7);
+    border-color: rgb(50, 205, 50);
+}
+
+.tab-arm-led .gPoint.function-a { /* Armed Mode */
+    background: rgb(52, 155, 255);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, .7);
+    border-color: rgb(52, 155, 255);
+}
+
+.tab-arm-led .gPoint.function-l { /* Battery */
+    background: magenta;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, .7);
+    border-color: rgb(52, 155, 255);
+}
+
+.tab-arm-led .gPoint.function-r { /* Ring */
+    background: radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, white 60%,white 70%,black 70%, black 100%);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, .7);
+    border-color: black;
+}
+
+.tab-arm-led .gPoint.function-g { /* GPS */
+    background: green;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, .7);
+    border-color: rgb(52, 155, 255);
+}
+
+.tab-arm-led .gPoint.function-c .overlay-color,
+.tab-arm-led .gPoint.function-r .overlay-color {
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-top: -23px;
+    margin-left: 4px;
+    border-radius: 4px;
+}
+
+.tab-arm-led .gPoint.function-s .overlay-s,
+.tab-arm-led .gPoint.function-w .overlay-w,
+.tab-arm-led .gPoint.function-i .overlay-i,
+.tab-arm-led .gPoint.function-t .overlay-t,
+.tab-arm-led .gPoint.function-o .overlay-o,
+.tab-arm-led .gPoint.function-b .overlay-b,
+.tab-arm-led .gPoint.function-n .overlay-n {
+    float: left;
+    height: 6px;
+    width: 16px;
+}
+
+.tab-arm-led .gPoint.function-w .overlay-w {
+    background-image: radial-gradient(1px at 8px 50% , red 0%, red 2px, rgba(0, 0, 0, 0.3) 3px, rgba(0, 0, 0, 0) 4px);
+    margin-top: -30px;
+    margin-left: -9px;
+}
+
+.tab-arm-led .gPoint.function-i .overlay-i {
+    background-image: radial-gradient(1px at 8px 50% , yellow 0%, yellow 2px, rgba(0, 0, 0, 0.3) 3px, rgba(0, 0, 0, 0) 4px);
+    margin-top: -30px;
+    margin-left: 16px;
+}
+
+.tab-arm-led .gPoint.function-t .overlay-t {
+    background-image: radial-gradient(1px at 8px 50% , orange 0%, orange 2px, rgba(0, 0, 0, 0.3) 3px, rgba(0, 0, 0, 0) 4px);
+    margin-top: -6px;
+    margin-left: -9px;
+}
+
+.tab-arm-led .gPoint.function-s .overlay-s {
+    background-image: radial-gradient(1px at 8px 50% , brown 0%, brown 2px, rgba(0, 0, 0, 0.3) 3px, rgba(0, 0, 0, 0) 4px);
+    margin-top: -6px;
+    margin-left: 16px;
+}
+
+.tab-arm-led .gPoint.function-o .overlay-o {
+    background-image: radial-gradient(1px at 8px 50% , brown 0%, brown 2px, rgba(0, 0, 0, 0.3) 3px, rgba(0, 0, 0, 0) 4px);
+    margin-top: -6px;
+    margin-left: 16px;
+}
+
+.tab-arm-led .gPoint.function-b .overlay-b {
+    background-image: radial-gradient(1px at 8px 50% , rgb(52, 155, 255) 0%, rgb(52, 155, 255) 2px, rgba(0, 0, 0, 0.3) 3px, rgba(0, 0, 0, 0) 4px);
+    margin-top: -18px;
+    margin-left: -9px;
+}
+
+.tab-arm-led .gPoint.function-n .overlay-n {
+    background-image: radial-gradient(1px at 8px 50% , blue 0%, blue 2px, rgba(0, 0, 0, 0.3) 3px, rgba(0, 0, 0, 0) 4px);
+    margin-top: -18px;
+    margin-left: 16px;
+}
+
+
+.tab-arm-led .gPoint select {
+    background: #000;
+    width: 13px;
+    height: 13px;
+}
+
+.tab-arm-led .wire {
+    color: rgba(255,255,255,.5);
+    text-align: center;
+    font-size: 12px;
+    text-shadow: 1px 1px rgba(0,0,0,.4);
+    padding-top: 0px;
+    display: block;
+    /* font-family: monospace; */
+    margin-left: -1px;
+    margin-top: -21px;
+    width: 24px;
+    height: 24px;
+}
+
+.gridWire .wire {
+    color: rgba(255,255,255,1);
+}
+
+.gridWire {
+    background: rgba(15, 171, 22, .5) !important;
+}
+
+/*function buttons*/
+
+.tab-arm-led button {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid silver;
+    background-color: #ececec;
+    border-radius: 3px;
+    padding: 1px 1px;
+    margin: 3px 0;
+	font-size: 7pt
+}
+
+.tab-arm-led button:hover {
+    background-color: #acacac;
+}
+
+.tab-arm-led .funcWire.btnOn {
+    background: rgb(15, 171, 22);
+}
+
+
+.tab-arm-led .w100 {
+    width: 100%;
+}
+
+.tab-arm-led .w50 {
+    width: 49%;
+}
+
+/* Drop-down boxes */
+
+.tab-arm-led .select {    background: white;}
+.tab-arm-led .select .function-c {
+    background: linear-gradient( to bottom right, rgba(255, 0, 0, .5) 0%, rgba(255, 255, 0, 0.5) 15%, rgba(0, 255, 0, .5) 30%, rgba(0, 255, 255, .5) 50%, rgba(0, 0, 255, .5) 65%, rgba(255, 0, 255, .5) 80%, rgba(255, 0, 0, .5) 100%);
+}
+
+.tab-arm-led .select .function-f {    background: rgb(50, 205, 50);}
+.tab-arm-led .select .function-a {    background: rgb(52, 155, 255);}
+.tab-arm-led .select .function-l {    background: magenta;}
+.tab-arm-led .select .function-s {    background: brown;}
+.tab-arm-led .select .function-g {    background: green;}
+/* .tab-arm-led .select .function-b {    background: white;    color:black;} */
+.tab-arm-led .select .function-r {    background: #acacac;}
+
+.tab-arm-led .select .functionSelect option {
+    background: white;
+    color: black;
+}
+
+
+.tab-arm-led .overlays,
+.tab-arm-led .blinkers,
+.tab-arm-led .modifiers {
+    display: inline-block;
+}
+
+.tab-arm-led .colorDefineSliders {
+    display: inline-block;
+    position: absolute;
+    z-index: 10000;
+    background: white;
+    padding: 5px;
+    margin: 10px;
+    border-color: #565656;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2px;
+}
+
+.tab-arm-led .color-5-1 {background: white;}
+.tab-arm-led .color-5-2 {background: red;}
+.tab-arm-led .color-5-3 {background: orange;}
+.tab-arm-led .color-5-4 {background: yellow;}
+.tab-arm-led .color-5-5 {background: greenyellow;}
+.tab-arm-led .color-5-6 {background: limegreen;}
+.tab-arm-led .color-5-7 {background: palegreen;}
+.tab-arm-led .color-5-8 {background: cyan;}
+.tab-arm-led .color-5-9 {background: lightcyan;}
+.tab-arm-led .color-5-10 {background: dodgerblue;}
+.tab-arm-led .color-5-11 {background: darkviolet;}
+.tab-arm-led .color-5-12 {background: magenta;}
+.tab-arm-led .color-5-13 {background: deeppink;}
+
+.tab-arm-led .color-6-1 {background: white;}
+.tab-arm-led .color-6-2 {background: red;}
+.tab-arm-led .color-6-3 {background: orange;}
+.tab-arm-led .color-6-4 {background: yellow;}
+.tab-arm-led .color-6-5 {background: greenyellow;}
+.tab-arm-led .color-6-6 {background: limegreen;}
+.tab-arm-led .color-6-7 {background: palegreen;}
+.tab-arm-led .color-6-8 {background: cyan;}
+.tab-arm-led .color-6-9 {background: lightcyan;}
+.tab-arm-led .color-6-10 {background: dodgerblue;}
+.tab-arm-led .color-6-11 {background: darkviolet;}
+.tab-arm-led .color-6-12 {background: magenta;}
+.tab-arm-led .color-6-13 {background: deeppink;}
+
+.tab-arm-led .directions button.btnOn,
+.tab-arm-led .colors1 .btnOn,
+.tab-arm-led .colors2 .btnOn,
+.tab-arm-led .special_colors button.btnOn,
+.tab-arm-led .mode_colors1 button.btnOn,
+.tab-arm-led .mode_colors2 button.btnOn {
+    border-color: #000;
+}
+.tab-arm-led .special_colors button {
+	padding: 6px 6px;
+}
+.tab-arm-led .colors1 button:hover {
+    border-color: inherit;
+    border-style: solid;
+}
+.tab-arm-led .colors2 button:hover {
+    border-color: inherit;
+    border-style: solid;
+}
+.tab-arm-led .mode_colors1 button:hover {
+    border-color: inherit;
+    border-style: solid;
+}
+.tab-arm-led .mode_colors2 button:hover {
+    border-color: inherit;
+    border-style: solid;
+}
+
+.tab-arm-led .directions .btnOn {
+    background: #FFF; color: #000;
+}
+
+.tab-arm-led .indicators {
+    position: relative;
+    height: 24px
+}
+
+.tab-arm-led .indicators span {
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.tab-arm-led .indicators .north {
+    top: -9px;
+    left: 4px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid rgba(0,0,0,.8);
+}
+
+.tab-arm-led .indicators .south {
+    bottom: -8px;
+    left: 4px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid rgba(0,0,0,.8);
+}
+
+.tab-arm-led .indicators .east {
+    bottom: 7px;
+    right: -9px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid rgba(0,0,0,.8);
+}
+
+.tab-arm-led .indicators .west {
+    bottom: 7px;
+    left: -9px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid rgba(0,0,0,.8);
+}
+
+.tab-arm-led .indicators .up {
+    top: 0px;
+    left: 2px;
+}
+
+.tab-arm-led .indicators .down {
+    bottom: 17px;
+    right: 10px;
+}
+
+.tab-arm-led .dir-n .north {display: inline;}
+.tab-arm-led .dir-s .south {display: inline;}
+.tab-arm-led .dir-e .east {display: inline;}
+.tab-arm-led .dir-w .west {display: inline;}
+.tab-arm-led .dir-u .up {display: inline;}
+.tab-arm-led .dir-d .down {display: inline;}
+
+.tab-arm-led .controls {
+    position: relative;
+    float: left;
+    width: 285px;
+    margin-right: 10px;
+}
+
+.colorDefineSliderValue,
+.colorDefineSliderLabel {
+    width: 10px;
+    display: inline-table;
+    margin-bottom: 5px;
+}
+
+.tab-arm-led .directions,
+.tab-arm-led .colors1,
+.tab-arm-led .colors2 {
+    height: 117px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.tab-arm-led .directions button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.tab-arm-led .warning dialog {
+    width: 40em;
+	height: 140px;
+    border-radius: 5px;
+}
+
+.tab-arm-led dialog {
+    width: 40em;
+	height: 180px;
+    border-radius: 5px;
+}
+.tab-arm-led dialog h3 {
+    margin-bottom: 0.5em;
+}
+.tab-arm-led dialog .buttons {
+    position: static;
+    margin-top: 2em;
+}
+.tab-arm-led progress {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+}
+.tab-arm-led progress::-webkit-progress-bar {
+    height: 24px;
+    background-color: #eee;
+}
+
+.tab-arm-led progress::-webkit-progress-value {
+    background-color: #bcf;
+}
+.tab-arm-led .regular-button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+    background-color: #009ce0;
+    border-radius: 3px;
+    border: 1px solid #0074b3;
+    color: #000;
+    font-family: 'open_sansbold', Arial;
+    font-size: 12px;
+    text-shadow: 0px 1px rgba(255, 255, 255, 0.25);
+    display: inline-block;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    padding: 0px;
+    padding-left: 9px;
+    padding-right: 9px;
+    line-height: 28px;
+}
+.data-processing .data-processing-after {
+    display: none;
+}
+
+.data-processing.done .data-processing-before {
+    display: none;
+}
+
+.data-processing.done .data-processing-after {
+    display: block;
+}
+.tab-arm-led .directions .dir-n {top: 0; left: 32px;}
+.tab-arm-led .directions .dir-s {top: 64px; left: 32px;}
+.tab-arm-led .directions .dir-e {left: 64px; top: 32px;}
+.tab-arm-led .directions .dir-w {left: 0; top: 32px;}
+.tab-arm-led .directions .dir-u {right: 10px; top: 15px;}
+.tab-arm-led .directions .dir-d {right: 10px; top: 54px;}
+
+.tab-arm-led .colors1 button {
+    height: calc(25% - 6px);
+	width: 20%;
+}
+
+.tab-arm-led .colors2 button {
+    height: calc(25% - 6px);
+	width: 20%;
+}
+
+.tab-arm-led .wires-remaining {
+    float: right;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tab-arm-led .wires-remaining div {
+    font-size: 40px;
+    color: #009ce0;
+    margin-bottom: -5px;
+    margin-top: -10px;
+}
+
+.tab-arm-led .wires-remaining.error div {
+    color: #FF5700;
+}
+
+.tab-arm-led > .buttons {
+    margin-top: 10px;
+}
+
+.gridSections {
+    position: absolute;
+    z-index: -1;
+    width: 496px;
+    border: 1px solid rgb(236, 236, 236);
+    margin-top: -1px;
+    margin-left: -1px;
+    border-radius: 3px;
+}
+
+.gridSections .block {
+    width: 122px;
+    height: 122px;
+    float: left;
+    border: solid 1px rgb(236, 236, 236);
+}
+
+
+/*******JQUERYUI**********/
+
+.tab-arm-led .ui-selected {
+    box-shadow: inset 0 0 8px rgba(255, 0, 255, 1) !important;
+    border: solid 1px #000 !important;
+}
+
+.tab-arm-led .ui-selecting {
+    box-shadow: inset 0 0 30px rgba(255, 0, 255, .7) !important;
+    border: solid 1px #000 !important;
+}
+
+.tab-arm-led .ui-selectable-helper {
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    z-index: 100;
+    border: 1px dotted white;
+}
+
+.tab-arm-led .spacebottom {
+    margin-bottom: 20px;
+}

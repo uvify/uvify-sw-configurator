@@ -1,0 +1,52 @@
+{
+    "manifest_version": 2,
+    "minimum_chrome_version": "38",
+    "version": "4.0.2",
+    "author": "UVify",
+    "name": "UVify - Configurator",
+    "short_name": "UVify",
+    "description": "Crossplatform configuration tool for UVify flight control system",
+
+    "offline_enabled": true,
+
+    "default_locale": "en",
+
+    "app": {
+        "background": {
+            "scripts": ["eventPage.js"],
+            "persistent": false
+        }
+    },
+
+    "sandbox": {
+    "pages": ["tabs/map.html"]
+    },
+         
+    "permissions": [
+        "https://maps.googleapis.com/*",    
+        "https://*.github.com/",
+        "https://*.githubusercontent.com/",
+        "http://*.baseflight.net/",
+        "https://*.amazonaws.com/",
+        "serial",
+        "usb",
+        "storage",
+        "fileSystem",
+        "fileSystem.write",
+        "fileSystem.retainEntries",
+        "notifications",
+        "alwaysOnTopWindows",
+        {"usbDevices": [
+            {"vendorId": 1155, "productId": 57105}
+        ]}
+    ],
+    "sockets": {
+        "tcp": {
+            "connect": "*:*"
+        }
+    },
+
+    "icons": {
+        "128": "images/bf_icon_128.png"
+    }
+}
